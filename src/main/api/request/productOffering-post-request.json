@@ -1,0 +1,175 @@
+{
+	"id": "42",
+	"href": "http://serverlocation:port/productCatalogManagement/productOffering/42",
+	"version": "2.0",
+	"lastUpdate": "2013-04-19T16:42:23.0Z",
+	"name": "Virtual Storage Medium",
+	"description": "Virtual Storage Medium",
+	"isBundle": true,
+	"lifecycleStatus": "Active",
+	"validFor": 
+	{
+		"startDateTime": "2013-04-19T16:42:23.0Z",
+		"endDateTime": "2013-06-19T00:00:00.0Z"
+	},
+
+	"category": 
+	[
+		{
+			"id": "12",
+			"href": "http://serverlocation:port/catalogManagement/category/12",
+			"version": "2.0",
+			"name": "Cloud offerings"
+		}
+	],
+
+	"channel": 
+	[
+		{
+			"id": "13",
+			"href": "http://serverlocation:port/marketSales/channel/13",
+			"name": "Online Channel"
+		}
+	],
+
+	"place": 
+	[
+		{
+			"id": "12", 
+			"href": "http://serverlocation:port/marketSales/place/12",
+			"name": "France"
+		}
+	],
+
+	"bundledProductOffering": 
+	[
+		{
+			"id": "15",
+			"href": "http://serverlocation:port/productCatalogManagement/productOffering/15",
+			"lifecycleStatus": "Active",
+			"name": "Offering 15"
+		},
+
+		{
+			"id": "64",
+			"href": "http://serverlocation:port/productCatalogManagement/productOffering/64",
+			"lifecycleStatus": "Active",
+			"name": "Offering 64"
+		}
+	],
+
+	"serviceLevelAgreement": 
+	{
+		"id": "28",
+		"href": "http://serverlocation:port/slaManagement/serviceLevelAgreement/28",
+		"name": "Standard SLA"
+	},
+
+	"productSpecification": 
+		{
+			"id": "13",
+			"href": "http://serverlocation:port/productCatalogManagement/productSpecification/13",
+			"version": "2.0",
+			"name": "specification product 1"
+		},
+
+	"serviceCandidate": 
+		{
+			"id": "13",
+			"href": "http://serverlocation:port/serviceCatalogManagement/serviceCandidate/13",
+			"version": "2.0",
+			"name": "specification service 1"
+		},
+
+	"resourceCandidate": 
+		{
+			"id": "13",
+			"href": "http://serverlocation:port/resourceCatalogManagement/resourceCandidate/13",
+			"version": "2.0",
+			"name": "specification resource 1"
+		},
+
+	"productOfferingTerm": 
+	[
+		{
+			"name": "12 Month",
+			"description": "12 month contract",
+			"duration": "12",
+			"validFor": 
+			{
+				"startDateTime": "2013-04-19T16:42:23.0Z",
+				"endDateTime": "2013-06-19T00:00:00.0Z"
+			}
+		}
+	],
+
+	"productOfferingPrice": 
+	[
+		{
+			
+			"name": "Monthly Price",
+			"description": "monthlyprice",
+			"validFor": 
+			{
+				"startDateTime": "2013-04-19T16:42:23.0Z",
+				"endDateTime": "2013-06-19T00:00:00.0Z"
+			},
+
+			"priceType": "recurring",
+			"unitOfMeasure": "",
+			"price": 
+			{
+				"taxIncludedAmount": 12,
+				"dutyFreeAmount": 10,
+				"taxRate": 20,
+				"currencyCode": "EUR",
+				"percentage": 0
+			},
+
+			"recurringChargePeriod": "monthly"
+		},
+
+		{
+			
+			"name": "Usage Price",
+			"description": "usageprice",
+			"validFor": 
+			{
+				"startDateTime": "2013-04-19T16:42:23.0Z",
+				"endDateTime": "2013-06-19T00:00:00.0Z"
+			},
+
+			"priceType": "usage",
+			"unitOfMeasure": "second",
+			"price": 
+			{
+				"taxIncludedAmount": 12,
+				"dutyFreeAmount": 10,
+				"taxRate": 20,
+				"currencyCode": "EUR",
+				"percentage": 0
+			},
+
+			"recurringChargePeriod": "",
+			"productOfferPriceAlteration": 
+			{
+				"name": "Shipping Discount",
+				"description": "One time shipping discount",
+				"validFor": 
+				{
+					"startDateTime": "2013-04-19T16:42:23.0Z"
+				},
+
+				"priceType": "One Time discount",
+				"unitOfMeasure": "",
+				"price": 
+				{
+					"percentage": 100
+				},
+
+				"recurringChargePeriod": "",
+				"priceCondition": "apply if total amount of the  order is greater than 300.00"
+			}
+		}
+	]
+}

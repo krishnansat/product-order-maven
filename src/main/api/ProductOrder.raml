@@ -1,0 +1,33 @@
+#%RAML 0.8
+title: Product Ordering API
+version: 1.0
+
+#baseUri: http://server/api/{version}/orderManagement
+baseUri: http://mocksvc.mulesoft.com/mocks/d29d898b-5531-4a28-ae23-bc738d749116/api/{version}/orderManagement
+mediaType: application/json
+
+/productOrder:
+  post:
+      description: This operation is used to add new orders and/or their items.
+      body:
+        schema: !include request/productOrderNew.json
+      responses:
+        201:
+          body:
+            example: !include response/productOrderNewResp.json
+        400:
+          body:
+            example: |
+              {"message":"Bad Request - error"}
+  /{ID}:
+    get:
+      responses:
+        200:
+          body:
+            example: !include response/productOrderResp.json
+        404:
+          body:      
+            example: | 
+                {"message": "Not found - the supplied ID does not match a known productOrder"}
+    
+  

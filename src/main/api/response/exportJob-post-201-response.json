@@ -1,0 +1,11 @@
+{
+        "id": "54",
+        "href": "http:/api/catalogManagement/exportJob/54",
+        "status": "running",
+        "path": "catalogManagement",
+        "content-type": "application/json",
+        "errorLog": "",
+        "creationDate": "2013-04-19T16:42:23-04:00",
+        "completionDate": "",
+        "url": "ftp://ftp.catalogManagement.com/catalog/54"
+    }    

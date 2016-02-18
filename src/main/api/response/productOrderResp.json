@@ -1,0 +1,71 @@
+{
+   "id":"42",
+   "href":"http://serverlocation:port/orderManagement/productOrder/42",
+   "externalId":"NiceNameForTheConsumer_42",
+   "priority":"1",
+   "description":"A wonderful 42 order for brand new products",
+   "category":"residential",
+   "state":"InProgress",
+   "orderDate":"2013-04-12T16:42:23-04:00",
+   "completionDate":"2013-04-19T16:42:23-04:00",
+   "requestedStartDate":"2013-04-12T16:42:23-04:00",
+   "requestedCompletionDate":"2013-04-19T16:42:23-04:00",
+   "expectedCompletionDate":"2013-04-19T16:42:23-04:00",
+   "notificationContact":"emailAddr-myAddress@hotmail.com",
+   "note":[
+      {
+         "text":"A free text detailing the note",
+         "date":"2013-04-12T16:42:23-04:00",
+         "author":"name"
+      }
+   ],
+   "relatedParty":[
+      {
+         "role":"customer",
+         "id":"345221",
+         "href":"http://serverlocation:port/partyManagement/customeer/345221",
+         "name":"John Doe"
+      },
+      {
+         "role":"partner",
+         "id":"42",
+         "href":"http://serverlocation:port/partyManagement/partner/42"
+      },
+      {
+         "role":"seller",
+         "id":"4563",
+         "href":"http://serverlocation:port/partnerManagement/partner/4563"
+      }
+   ],
+   "orderItem":[
+      {
+         "id":"1",
+         "action":"add",
+         "state":"Acknowledged",
+         "billingAccount":[{
+               "id":"123456",
+               "href":"http://serverlocation:port/billingManagement/billingAccount/123456"
+         }],
+         "appointment":"http://www.doodle.com/1WCV5647438",
+         "productOffering":{
+            "id":"42",
+            "href":"http: //serverlocation: port/catalogManagement/productOffering/42"
+         },
+         "product":{
+         "place":{
+            "href":"http://map.google.com/.../1234112GDE",
+            "role":"DeliveryPlace"
+         },
+            "productCharacteristic":[
+               {
+                  "name":"Colour",
+                  "value":"White"
+               },
+               {
+                  "name":"Memory",
+                  "value":"16"
+               }
+            ]
+         }
+      }
+]}

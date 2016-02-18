@@ -1,0 +1,79 @@
+{
+   "id":"42",
+   "href":"http://serverlocation:port/orderManagement/productOrder/42",
+   "priority":"4",
+   "category":"uncategorized",
+   "state":"Acknowledged",
+   "orderDate":"2013-04-12T16:42:23-04:00",
+   "expectedCompletionDate":"2013-04-19T16:42:23-04:00",   "note":[
+      {
+         "text":"A free text detailing the note"
+      }
+   ],
+   "relatedParty":[
+      {
+         "role":"customer",
+         "id":"345221",
+         "href":"http://serverlocation:port/partyManagement/customer/345221"
+         "name":"John Doe"
+      },
+      {
+         "role":"seller",
+         "id":"4563",
+         "href":"http://serverlocation:port/partnerManagement/partner/4563"
+      }
+   ],
+   "orderItem":[
+      {
+         "id":"1",
+         "action":"add",
+         "state":"Acknowledged",
+         "billingAccount":[{
+               "id":"1789",
+               "href":"http://serverlocation:port/billingManagement/billingAccount/1789"
+         }],
+         "productOffering":{
+            "id":"42",
+            "href":"http: //serverlocation: port/catalogManagement/productOffering/42"
+         },
+         "product":{
+            "productCharacteristic":[
+               {
+                  "name":"Colour",
+                  "value":"White"
+               },
+               {
+                  "name":"Memory",
+                  "value":"16"
+               }
+            ]
+         }
+      },
+      {
+         "id":"2",
+         "action":"modify",
+         "state":"Acknowledged",
+         "product":{
+            "id":"456",
+            "href":"http: //serverlocation: port/inventoryManagement/product/456",
+            "relatedParty":[
+               {
+                  "role":"user",
+                  "id":"5667443",
+                  "href":"http://serverlocation:port/partyManagement/user/5667443",
+                  "name":"Jimmy Doe"
+               }
+            ]
+         }
+      },
+      {
+         "id":"3",
+         "action":"delete",
+         "state":"Acknowledged",
+         "product":{
+            "id":"456",
+            "href":"http: //serverlocation: port/inventoryManagement/product/456"
+         }
+      }
+   ]
+}

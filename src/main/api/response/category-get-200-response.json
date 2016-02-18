@@ -1,0 +1,15 @@
+{
+	"id": "42",
+	"href": "http://serverlocation:port/catalogManagement/category/42",
+	"lastUpdate": "2013-04-19T16:42:23-04:00",
+	"version": "2.0",
+	"lifecycleStatus": "Active",
+	"validFor": {
+		"startDateTime": "2013-04-19T16:42:23-04:00",
+		"endDateTime": ""
+	},
+	"parentId": " 41",
+	"isRoot": "false",
+	"name": "Cloud Services",
+	"description": "A category to hold all available cloud service offers"
+}
